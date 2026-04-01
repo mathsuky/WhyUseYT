@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "WhyUseYT",
+  "version": "1.0.0",
+  "description": "A Chrome extension that asks you why before opening YouTube",
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["dist/content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
